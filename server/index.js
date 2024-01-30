@@ -47,7 +47,7 @@ app.use("/uploads", express.static(__dirname + "/uploads"));
 app.use(
   cors({
     credentials: true,
-    origin: "http://localhost:5173",
+    origin: "https://deploy-test-phi-silk.vercel.app/",
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     allowedHeaders: "Content-Type,Authorization",
     optionsSuccessStatus: 204,
