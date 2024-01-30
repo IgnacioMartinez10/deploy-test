@@ -1,1 +1,1 @@
-export const URL_BASE = 'https://deploy-test-0lrr.onrender.com/';
+export const URL_BASE = 'https://deploy-test-0lrr.onrender.com';

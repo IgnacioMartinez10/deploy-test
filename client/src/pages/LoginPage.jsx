@@ -5,6 +5,7 @@ import { UserContext } from "../components/UserContext";
 import { useNavigate } from 'react-router-dom';
 import { gapi } from "gapi-script";
 import GoogleLogin from 'react-google-login';
+import { URL_BASE } from "../utils/const";
 
 const LoginPage = () => {
     const client_id = "1056894336848-o8gs701t5oahl4ih6hi330t92kth6oa8.apps.googleusercontent.com";
@@ -29,7 +30,7 @@ const LoginPage = () => {
         e.preventDefault();
         try {
             const { data } = await axios.post(
-                "http://localhost:4000/login",
+                `${URL_BASE}/login`,
                 {
                     email,
                     password,
